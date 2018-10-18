@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const fs = require('fs');
 
 const generateHtmlPlugins = (templateDir) => {
@@ -123,5 +124,6 @@ module.exports = {
                 to: './uploads',
             },
         ]),
+        new ImageminPlugin({test: /\.(jpe?g|png|gif|svg)$/i}),
     ].concat(htmlPlugins),
 };
