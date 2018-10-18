@@ -14,7 +14,7 @@ const generateHtmlPlugins = (templateDir) => {
             filename: `${name}.html`,
             template: path.resolve(__dirname,
                 `${templateDir}/${name}.${extension}`),
-            //inject: false,
+            inject: false,
         });
     });
 };
