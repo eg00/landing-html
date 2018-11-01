@@ -2,11 +2,15 @@
   position: absolute;
   font-weight: 700;
   color: #fa0891;
-  background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
-  background-clip: text;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+  background: linear-gradient(to top,#f26522 0%, #fa0891 99%, #fa0891 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
 
   &.one {
     font-size: 28px;

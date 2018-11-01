@@ -4,7 +4,6 @@
 
 
 $primary: $orange;
-
 $brand-primary: $orange;
 $link-color: $orange;
 $font-family-sans-serif: "Roboto",
@@ -12,10 +11,10 @@ $font-family-sans-serif: "Roboto",
 sans-serif;
 
 @import "~bootstrap/scss/bootstrap";
-
 @import "bootstrap_override";
 
 @import "bg-tags";
+@import "carousel";
 
 
 nav {
@@ -35,7 +34,7 @@ nav {
   }
 
   .tel {
-    @extend .navbar-text, .order-md-2;
+    @extend .navbar-text, .order-lg-2;
     font-size: 18px;
     font-weight: 700;
     color: #1f1f24;
@@ -45,7 +44,7 @@ nav {
   }
 
   .btn {
-    @extend .order-md-4,
+    @extend .order-lg-4,
     .d-none,
     .d-lg-block;
     padding: 15px 41px;
@@ -86,7 +85,7 @@ nav {
   }
 
   .header-img {
-    @extend .col-lg-5;
+    @extend .col-lg-5, .order-lg-1;
 
     img {
       @extend .mr-auto;
@@ -148,7 +147,7 @@ nav {
   padding-top: 50px;
   padding-bottom: 50px;
 
-  .row > div {
+  .item {
     @extend .d-flex,
     .flex-column,
     .align-items-center,
@@ -163,7 +162,7 @@ nav {
   }
 }
 
-.works {
+.works, .carousel-example {
   padding-top: 50px;
   padding-bottom: 45px;
   background-color: $alabaster;
@@ -199,14 +198,14 @@ nav {
   }
 
   .left {
-    left: 0;
+    left: -16px;
     background-image: url("../img/left-arrow.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .right {
-    right: 0;
+    right: -46px;
     background-image: url("../img/right-arrow.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -237,57 +236,13 @@ nav {
     }
   }
 
-  .slider-controls {
-    @extend .d-xl-none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-
-    input {
-      position: absolute;
-      z-index: -1;
-      margin: 10px 0 0 7px;
-      opacity: 0;
-
-      &:checked + .radio__text:after {
-        opacity: 1;
-      }
-    }
-
-    .radio__text {
-      position: relative;
-      padding: 0 0 0 20px;
-      cursor: pointer;
-
-      &:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 10px;
-        height: 10px;
-        content: "";
-        background-color: #ebebeb;
-        border-radius: 50%;
-      }
-
-      &:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 10px;
-        height: 10px;
-        content: "";
-        background: $orange;
-        border-radius: 50%;
-        opacity: 0;
-        transition: .2s;
-      }
-    }
-  }
-
   .btn {
     padding: 21px 65px;
+    margin-top: 65px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+
     @include media-breakpoint-up(xl) {
       margin-top: 65px;
     }
@@ -399,3 +354,5 @@ footer {
     color: $white;
   }
 }
+@import '~aos/dist/aos.css';
+@import "modal";

@@ -1,146 +1,151 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
-    <meta content = "text/html; charset=utf-8" http-equiv = "Content-Type"/>
-    <meta content = "IE=edge" http-equiv = "X-UA-Compatible">
-    <meta content = "width=device-width, initial-scale=1" name = "viewport">
-    <link href = "favicon/favicon.ico" rel = "shortcut icon">
-    <link href = "favicon/favicon-32x32.png" rel = "icon" sizes = "32x32" type = "image/png">
-    <link href = "favicon/favicon-16x16.png" rel = "icon" sizes = "16x16" type = "image/png">
-    <link href = "./css/style.bundle.css" rel = "stylesheet">
+    <link href="favicon/favicon.ico" rel="shortcut icon">
+    <link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
     <title>Дмитрий Алексеев. Frontend-разработчик и веб-верстальщик</title>
+    <!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
 </head>
 
 <body>
 <nav>
-    <div class = "container">
-        <button aria-controls = "navbar" aria-expanded = "false" aria-label = "Toggle navigation" class = "custom-toggler" data-target = "#navbar"
-                data-toggle = "collapse" type = "button">
-            <span class = "navbar-toggler-icon"> </span>
+    <div class="container">
+        <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="custom-toggler"
+                data-target="#navbar"
+                data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"> </span>
         </button>
-        <span class = "tel">+7 (499) 995-55-77</span>
-        <img alt = "tel" class = "order-md-3 d-lg-none" src = "img/tel.png">
-        <a class = "btn" href = "#">Заказать звонок</a>
+        <span class="tel">+7 (499) 995-55-77</span>
+        <img alt="tel" class="order-md-3 d-lg-none" src="img/tel.png">
+        <a class="btn" href="#callbackForm">Заказать звонок</a>
 
-        <div class = "collapse navbar-collapse order-md-1" id = "navbar">
-            <ul class = "navbar-nav">
-                <li class = "nav-item active">
-                    <a class = "nav-link" href = "#"> Услуги</a></li>
-                <li class = "nav-item">
-                    <a class = "nav-link active" href = "#">Портфолио </a>
+        <div class="collapse navbar-collapse order-xl-1 order-4 " id="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> Услуги</a></li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Портфолио </a>
                 </li>
-                <li class = "nav-item">
-                    <a class = "nav-link" href = "#">Стоимость</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Стоимость</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<header class = "header">
-    <div class = "container">
-        <div class = " row justify-content-between">
-            <span class = "bg-tag one">#</span>
-            <span class = "bg-tag two">{}</span>
-            <span class = "bg-tag three">&lt;/&gt;</span>
-            <span class = "bg-tag four">&lt;div&gt;</span>
-            <span class = "bg-tag five">&lt;/&gt;</span>
+<header class="header">
+    <div class="container">
+        <div class=" row justify-content-between">
+            <span class="bg-tag one">#</span>
+            <span class="bg-tag two">{}</span>
+            <span class="bg-tag three">&lt;/&gt;</span>
+            <span class="bg-tag four">&lt;div&gt;</span>
+            <span class="bg-tag five">&lt;/&gt;</span>
 
-            <div class = "header-img order-lg-1">
-                <img alt = "" class = "float-right" src = "img/deema.png">
+            <div class="header-img">
+                <img alt="" class="float-right" src="img/deema.png">
             </div>
-            <div class = "header-description order-lg-0">
+            <div class="header-description order-lg-0">
                 <h1>Дмитрий Алексеев</h1>
                 <span>Frontend-разработчик и веб-верстальщик</span>
-                <a class = "btn btn-primary align-self-stretch align-self-lg-start" href = "#">Узнать больше</a>
+                <a class="btn btn-primary align-self-stretch align-self-lg-start" href="#callbackForm">Узнать больше</a>
             </div>
         </div>
     </div>
 
 </header>
-<section class = "what">
-    <div class = "container">
-        <h2 class = "text-center">Что я делаю</h2>
-        <div class = "row">
-            <div class = "item">
-                <img alt = "" src = "img/tools-and-utensils.png">
+<section class="what">
+    <div class="container">
+        <h2 class="text-center">Что я делаю</h2>
+        <div class="row">
+            <div class="item" data-aos="zoom-in">
+                <img alt="" src="img/tools-and-utensils.png">
                 <span>Вёрстка лендинг–страниц и сайтов любой сложности</span>
             </div>
-            <div class = "col-md-6  col-lg-3">
-                <img alt = "" src = "img/responsive.png">
+            <div class="item" data-aos="zoom-in">
+                <img alt="" src="img/responsive.png">
                 <span>Адаптивная вёрстка под все браузеры и устройства</span>
             </div>
-            <div class = "col-md-6  col-lg-3">
-                <img alt = "" src = "img/programming.png">
+            <div class="item" data-aos="zoom-in">
+                <img alt="" src="img/programming.png">
                 <span>Frontend – разработка и программирование</span>
             </div>
-            <div class = "col-md-6  col-lg-3">
-                <img alt = "" src = "img/coding.png">
+            <div class="item" data-aos="zoom-in">
+                <img alt="" src="img/coding.png">
                 <span>Исправление и доработка существующей вёрстки</span>
             </div>
 
         </div>
-        <div class = "text-center">
-            <a class = "btn btn-primary " href = "#">Узнать стоимость</a>
-        </div>
-
-    </div>
-</section>
-<section class = "works">
-    <div class = "container p-0">
-        <h2 class = "text-center">Примеры моих работ</h2>
-        <div class = "row justify-content-center position-relative">
-            <a class = "left" href = "#"></a>
-            <a class = "right" href = "#"></a>
-            <div class = "card d-none d-md-block">
-                <img alt = "Сайт психолога Веры Антоновой" class = "card-img-top" src = "img/site1.jpg">
-                <div class = "card-body">
-                    <p class = "card-title">Сайт психолога Веры Антоновой</p>
-                </div>
-            </div>
-            <div class = "card">
-                <img alt = "Сайт магазина детской одежды" class = "card-img-top" src = "img/site2.jpg">
-                <div class = "card-body">
-                    <p class = "card-title">Сайт магазина детской одежды</p>
-                </div>
-            </div>
-            <div class = "card d-none d-xl-block">
-                <img alt = "Сайт магазина «Рыболов»" class = "card-img-top" src = "img/site3.jpg">
-                <div class = "card-body">
-                    <p class = "card-title">Сайт магазина «Рыболов»</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class = "slider-controls">
-            <label class = "radio">
-                <input name = "slider-control" type = "radio"/>
-                <div class = "radio__text"></div>
-            </label>
-            <label class = "radio">
-                <input name = "slider-control" type = "radio"/>
-                <div class = "radio__text"></div>
-            </label>
-            <label class = "radio">
-                <input name = "slider-control" type = "radio"/>
-                <div class = "radio__text"></div>
-            </label>
-
-        </div>
-
-        <div class = "text-center">
-            <a class = "btn btn-primary" href = "#">Заказать проект</a>
+        <div class="text-center">
+            <a class="btn btn-primary " href="#">Узнать стоимость</a>
         </div>
 
     </div>
 </section>
 
-<section class = "services">
-    <div class = "container">
-        <span class = "bg-tag s-one">{&nbsp;}</span>
-        <span class = "bg-tag s-two">&lt;div&gt;</span>
-        <span class = "bg-tag s-three">&lt;/&gt;</span>
+<section class="works">
+    <div class="container p-0 position-relative">
+        <h2 class="text-center">Примеры моих работ</h2>
+
+        <div class="row justify-content-center slick-carousel">
+
+            <div class="card ">
+                <img alt="Сайт психолога Веры Антоновой" class="card-img-top" src="img/site1.jpg">
+                <div class="card-body">
+                    <p class="card-title">Сайт психолога Веры Антоновой</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Сайт магазина детской одежды" class="card-img-top" src="img/site2.jpg">
+                <div class="card-body">
+                    <p class="card-title">Сайт магазина детской одежды</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Сайт магазина «Рыболов»" class="card-img-top" src="img/site3.jpg">
+                <div class="card-body">
+                    <p class="card-title">Сайт магазина «Рыболов»</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Сайт психолога Веры Антоновой" class="card-img-top" src="img/site1.jpg">
+                <div class="card-body">
+                    <p class="card-title">Сайт психолога Веры Антоновой</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Сайт магазина детской одежды" class="card-img-top" src="img/site2.jpg">
+                <div class="card-body">
+                    <p class="card-title">Сайт магазина детской одежды</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Сайт магазина «Рыболов»" class="card-img-top" src="img/site3.jpg">
+                <div class="card-body">
+                    <p class="card-title">Сайт магазина «Рыболов»</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <span class="left" href="#"></span>
+        <span class="right" href="#"></span>
+
+        <div class="text-center">
+            <a class="btn btn-primary" href="##callbackForm">Заказать проект</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="services" data-aos="fade-up">
+    <div class="container" >
+        <span class="bg-tag s-one">{&nbsp;}</span>
+        <span class="bg-tag s-two">&lt;div&gt;</span>
+        <span class="bg-tag s-three">&lt;/&gt;</span>
         <h3>Адаптивная вёрстка
             под все устройства
             и&nbsp;браузеры от 1000
@@ -153,44 +158,44 @@
     </div>
 </section>
 
-<section class = "contacts">
-    <div class = "row">
-        <div class = "left col-md-3 col-lg-4">
-            <ul class = "nav flex-column">
-                <li class = "nav-item"><a class = "nav-link" href = "#">Услуги</a></li>
-                <li class = "nav-item"><a class = "nav-link" href = "#">Портфолио</a></li>
-                <li class = "nav-item"><a class = "nav-link" href = "#">Стоимость</a></li>
+<section class="contacts">
+    <div class="row">
+        <div class="left col-md-3 col-lg-4">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Стоимость</a></li>
             </ul>
 
 
         </div>
-        <div class = " center col-md-5 col-lg-5">
-            <p><i class = "icon-phone"></i>+7 (499) 995-77-55</p>
-            <p><i class = "icon-envelope"></i>dmitry@alekseev.com</p>
+        <div class=" center col-md-5 col-lg-5">
+            <p><i class="icon-phone"></i>+7 (499) 995-77-55</p>
+            <p><i class="icon-envelope"></i>dmitry@alekseev.com</p>
 
         </div>
-        <div class = "right col-md-4 col-lg-3">
-            <a class = "btn" href = "#">Заказать звонок</a>
+        <div class="right col-md-4 col-lg-3">
+            <a class="btn" href="#callbackForm">Заказать звонок</a>
 
-            <ul class = "social">
+            <ul class="social">
                 <li>
-                    <a href = "#">
-                        <i class = "sprite sprite-icon_vk"></i>
+                    <a href="#">
+                        <i class="sprite sprite-icon_vk"></i>
                     </a>
                 </li>
                 <li>
-                    <a href = "#">
-                        <i class = "sprite sprite-icon_facebook"></i>
+                    <a href="#">
+                        <i class="sprite sprite-icon_facebook"></i>
                     </a>
                 </li>
                 <li>
-                    <a href = "#">
-                        <i class = "sprite sprite-icon_twitter"></i>
+                    <a href="#">
+                        <i class="sprite sprite-icon_twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a href = "#">
-                        <i class = "sprite sprite-icon_instagram"></i>
+                    <a href="#">
+                        <i class="sprite sprite-icon_instagram"></i>
                     </a>
                 </li>
             </ul>
@@ -200,4 +205,21 @@
 <footer>
     <span>© Дмитрий Алексеев, 2016 – 2018</span>
 </footer>
+
+<div class="modal fade" id="callbackForm" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="modal-title" id="ModalLabel">Оставьте данные и мы
+                    Вам перезвоним!</h5>
+                <input class="form-control" type="text" placeholder="Ваши имя и фамилия">
+                <input class="form-control" type="text" placeholder="Контактный телефон">
+                <button type="button" class="btn btn-modal">Отправить</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 </body>
