@@ -95,7 +95,7 @@ module.exports = {
                             sourceMap: true,
                             plugins: () => [
                                 require('autoprefixer')({
-                                    browsers:['> 1%', 'last 4 version']
+                                    overrideBrowserslist:  ['last 2 versions']
                                 }),
                                 require('cssnano')({
                                     preset: [
